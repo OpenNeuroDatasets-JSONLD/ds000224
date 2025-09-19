@@ -1,6 +1,7 @@
 {
     "MeasurementToolMetadata": {
-        "Description": "Demographic information"
+        "Description": "Demographic information",
+        "TermURL": "N/A"
     },
     "gender": {
         "Description": "Participant gender",
@@ -22,7 +23,8 @@
                     "TermURL": "snomed:248153007",
                     "Label": ""
                 }
-            }
+            },
+            "VariableType": "Categorical"
         }
     },
     "age": {
@@ -33,15 +35,16 @@
                 "TermURL": "nb:Age",
                 "Label": ""
             },
-            "Transformation": {
-                "TermURL": "nb:FromInt",
-                "Label": "integer data"
-            },
             "MissingValues": [
                 "",
                 "n/a",
                 " "
-            ]
+            ],
+            "Format": {
+                "TermURL": "nb:FromInt",
+                "Label": "integer data"
+            },
+            "VariableType": "Continuous"
         }
     },
     "education_degree": {
@@ -63,7 +66,7 @@
                 "TermURL": "nb:ParticipantID",
                 "Label": ""
             },
-            "Identifies": "participant"
+            "VariableType": "Identifier"
         },
         "Description": "There should have been a description here, but there wasn't. :("
     }
